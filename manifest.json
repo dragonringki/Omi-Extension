@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Omi Persistent Chat",
+  "version": "3.1",
+  "description": "Side panel chat that persists across tabs.",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.omi.me/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open Omi Chat"
+  }
+}
